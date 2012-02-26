@@ -1,0 +1,12 @@
+# Internal routing configuration to handle ESI
+#_internal:
+#   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
+#   prefix:   /_internal
+
+_mopa_bootstrap:
+    resource: "@MopaBootstrapBundle/Controller"
+    type:     annotation
+    
+_welcome:
+    pattern:   /
+    defaults:  { _controller: MopaBootstrapBundle:Examples:index }
